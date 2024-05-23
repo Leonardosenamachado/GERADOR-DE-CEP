@@ -1,0 +1,191 @@
+/* Estilo para ocupar toda a página */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #e0f7fa;
+  text-align: center;
+}
+
+.childBody {
+  width: 90%;
+  max-width: 800px;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 20px auto; /* Centraliza horizontalmente */
+}
+
+/* Estilo dos inputs e botões */
+.input_text,
+.inputTextCep,
+.inputTextVisualizacao {
+  width: calc(100% - 24px);
+  padding: 12px;
+  margin: 8px auto;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.btn_generic {
+  color: white;
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.btn_generic:hover {
+  transform: scale(1.05);
+}
+
+.btn_consultar {
+  background-color: #00796b;
+  border-radius: 0 25px 25px 0;
+  width: 150px;
+  height: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+  margin-left: -4px; /* Ajuste para alinhar com o input */
+}
+
+.btn_gravar {
+  background-color: #0288d1;
+  border-radius: 15px;
+  width: 250px;
+  height: 42px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  margin: 20px auto; /* Centraliza horizontalmente */
+  display: block;
+}
+
+.btn_gravar:hover {
+  background-color: #01579b;
+}
+
+.btn_deletar {
+  background-color: #d32f2f;
+}
+
+.btn_deletar:hover {
+  background-color: #b71c1c;
+}
+
+.btn_novo:hover {
+  background: #222121;
+}
+
+.labelCep {
+  display: block;
+  margin: 15px 0 5px 0;
+  font-size: 20px;
+  color: #00796b;
+}
+
+.inputTextCep {
+  width: 250px;
+  padding: 12px 20px;
+  margin: 5px auto;
+  height: 46px;
+  border: 1px solid #ccc;
+  border-radius: 25px 0 0 25px;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.column {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+input[type="text"] {
+  width: 100%;
+}
+
+header,
+section,
+footer {
+  text-align: center;
+}
+
+#modalAlerta,
+#modalPergunta,
+#modalLoading {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#modalLoading img {
+  display: block;
+  margin: auto;
+}
+
+/* Novos estilos para melhorar a estética */
+fieldset {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+legend {
+  padding: 0 10px;
+  color: #00796b;
+  font-size: 1.2em;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ccc;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
